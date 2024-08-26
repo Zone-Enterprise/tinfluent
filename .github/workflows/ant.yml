@@ -95,7 +95,7 @@ jobs:
  #     uses: LucaFeger/action-maven-cli@1.1.0
           
     - name: Build Ant
-      run: mvn ant:ant
+      run: mvn -fn ant:ant
 
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
