@@ -76,13 +76,13 @@ jobs:
     # GitHub actions token for repository cloning defaults to github.token
 #    GIT_TOKEN: # optional, default is ${{ github.token }}
           
-    - name: Maven & JDK8+ for monorepo projects
+#    - name: Maven & JDK8+ for monorepo projects
       # You may pin to the exact commit or the version.
       # uses: ZhilinS/action-maven-cli@52918214e79b7336f5776a12720e31b893598bf4
-      uses: ZhilinS/action-maven-cli@v1.3
-      with:
+#      uses: ZhilinS/action-maven-cli@v1.3
+#      with:
         # Maven lifecycles
-        lifecycle: site # default is clean package
+#        lifecycle: site # default is clean package
                         
     - name: automatic-version-bump-maven
       # You may pin to the exact commit or the version.
