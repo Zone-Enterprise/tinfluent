@@ -94,5 +94,8 @@ jobs:
       # uses: LucaFeger/action-maven-cli@765e218a50f02a12a7596dc9e7321fc385888a27
  #     uses: LucaFeger/action-maven-cli@1.1.0
           
+    - name: Build Ant
+      run: mvn ant:ant
+
     - name: Build with Ant
-      run: maven ant -noinput -buildfile build.xml
+      run: ant -noinput -buildfile build.xml
